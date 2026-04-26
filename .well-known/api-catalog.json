@@ -1,0 +1,67 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://api.usetailora.com",
+      "https://www.iana.org/assignments/link-relations/service-desc": [
+        {
+          "href": "https://api.usetailora.com/openapi.json",
+          "type": "application/vnd.oai.openapi+json;version=3.1"
+        }
+      ],
+      "https://www.iana.org/assignments/link-relations/service-doc": [
+        {
+          "href": "https://docs.usetailora.com",
+          "type": "text/html"
+        }
+      ],
+      "https://www.iana.org/assignments/link-relations/status": [
+        {
+          "href": "https://api.usetailora.com/up",
+          "type": "application/json"
+        }
+      ],
+      "https://www.iana.org/assignments/link-relations/describedby": [
+        {
+          "href": "https://usetailora.com/.well-known/api-catalog",
+          "type": "application/linkset+json"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "title": "Tailora API Catalog",
+    "description": "The Tailora REST API (v1) powers the Tailora mobile app — a business management platform for independent tailors and fashion designers across Africa. All endpoints are authenticated via JWT (phone OTP via WhatsApp). Base URL: https://api.usetailora.com/api/v1",
+    "version": "1.0",
+    "contact": {
+      "email": "support@usetailora.com",
+      "url": "https://usetailora.com"
+    },
+    "license": {
+      "name": "Proprietary — All rights reserved",
+      "url": "https://usetailora.com/terms-of-use.html"
+    },
+    "authentication": {
+      "type": "bearer",
+      "scheme": "JWT",
+      "description": "Obtain a JWT by completing phone OTP verification via POST /api/v1/auth/verify_otp followed by POST /api/v1/auth/register or POST /api/v1/auth/login. Tokens expire after 24 hours.",
+      "endpoints": {
+        "send_otp": "POST https://api.usetailora.com/api/v1/auth/send_otp",
+        "verify_otp": "POST https://api.usetailora.com/api/v1/auth/verify_otp",
+        "login": "POST https://api.usetailora.com/api/v1/auth/login"
+      }
+    },
+    "capabilities": [
+      "customer-management",
+      "order-management",
+      "measurements",
+      "wallet",
+      "kyc-verification",
+      "notifications",
+      "referrals",
+      "settings"
+    ],
+    "health": "https://api.usetailora.com/up",
+    "region": "Nigeria (Africa-first)",
+    "currency": "NGN"
+  }
+}
