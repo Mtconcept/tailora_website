@@ -2,28 +2,17 @@
   "cleanUrls": true,
   "rewrites": [
     {
-      "source": "/sitemap.xml",
-      "destination": "/sitemap.xml"
-    },
-    {
-      "source": "/robots.txt",
-      "destination": "/robots.txt"
-    },
-    {
       "source": "/.well-known/api-catalog",
       "destination": "/api-catalog.json"
     }
-  ]
-}
-
-{
+  ],
   "headers": [
     {
       "source": "/",
       "headers": [
         {
           "key": "Link",
-          "value": "</.well-known/api-catalog>; rel=\"api-catalog\", </robots.txt>; rel=\"https://www.iana.org/assignments/link-relations/robots-txt\", <https://api.usetailora.com>; rel=\"service\""
+          "value": "</.well-known/api-catalog>; rel=\"api-catalog\", <https://api.usetailora.com>; rel=\"service\""
         },
         {
           "key": "X-Robots-Tag",
@@ -95,6 +84,5 @@
         }
       ]
     }
-  ],
-  "trailingSlash": false,
+  ]
 }
