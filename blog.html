@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailora Blog — Business Tips for African Tailors & Fashion Designers</title>
+  <meta name="description" content="Practical guides, business tips, and growth strategies for independent tailors and fashion designers across Africa. Learn how to manage orders, grow your client base, and run a smarter tailoring business." />
+  <meta name="keywords" content="tailor business tips Nigeria, fashion designer Africa, tailor app, tailoring business growth, tailor order management" />
+  <link rel="canonical" href="https://usetailora.com/blog/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tailora Blog — Business Tips for African Tailors" />
+  <meta property="og:description" content="Practical guides and growth strategies for independent tailors and fashion designers across Africa." />
+  <meta property="og:url" content="https://usetailora.com/blog/" />
+  <meta property="og:image" content="https://i.pinimg.com/1200x/99/d4/72/99d4725076bc6b8913c4e2ed81d598a9.jpg" />
+  <meta property="og:site_name" content="Tailora" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tailora Blog — Business Tips for African Tailors" />
+  <meta name="twitter:description" content="Practical guides and growth strategies for independent tailors and fashion designers across Africa." />
+  <meta name="twitter:image" content="https://i.pinimg.com/1200x/99/d4/72/99d4725076bc6b8913c4e2ed81d598a9.jpg" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Tailora Blog",
+    "description": "Business tips, guides, and growth strategies for independent tailors and fashion designers across Africa.",
+    "url": "https://usetailora.com/blog/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Tailora",
+      "url": "https://usetailora.com",
+      "logo": { "@type": "ImageObject", "url": "https://usetailora.com/favicon.svg" }
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #080808;
+      --surface-1: #101010;
+      --surface-2: #161616;
+      --border-1: #222;
+      --border-2: #2c2c2c;
+      --purple: #A855F7;
+      --purple-dim: #7c3aed;
+      --text-1: #f0f0f0;
+      --text-2: #a0a0a0;
+      --text-3: #555;
+      --mono: 'DM Mono', monospace;
+      --sans: 'DM Sans', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text-1);
+      font-family: var(--sans);
+      font-size: 15px;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(8,8,8,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-1);
+      padding: 0 24px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      font-family: var(--mono);
+      font-size: 15px;
+      color: var(--text-1);
+      letter-spacing: 0.02em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-logo span { color: var(--purple); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .nav-links a {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--text-3);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover, .nav-links a.active { color: var(--purple); }
+
+    .nav-cta {
+      font-family: var(--mono);
+      font-size: 11px;
+      background: var(--purple);
+      color: white;
+      padding: 7px 16px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .nav-cta:hover { background: var(--purple-dim); }
+
+    /* ── Hero ── */
+    .blog-hero {
+      padding: 80px 24px 60px;
+      max-width: 900px;
+      margin: 0 auto;
+      border-bottom: 1px solid var(--border-1);
+    }
+
+    .blog-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--purple);
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .blog-label::before {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 1px;
+      background: var(--purple);
+    }
+
+    .blog-hero h1 {
+      font-family: var(--mono);
+      font-size: clamp(28px, 5vw, 48px);
+      font-weight: 500;
+      color: var(--text-1);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+    }
+
+    .blog-hero h1 em {
+      font-style: normal;
+      color: var(--purple);
+    }
+
+    .blog-hero p {
+      font-size: 16px;
+      color: var(--text-2);
+      max-width: 560px;
+      line-height: 1.7;
+    }
+
+    /* ── Filter tabs ── */
+    .filter-row {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px 24px 0;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .filter-tab {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border: 1px solid var(--border-1);
+      background: none;
+      color: var(--text-3);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .filter-tab:hover { border-color: var(--purple); color: var(--purple); }
+    .filter-tab.active { background: var(--purple); border-color: var(--purple); color: white; }
+
+    /* ── Featured post ── */
+    .featured-wrap {
+      max-width: 900px;
+      margin: 32px auto 0;
+      padding: 0 24px;
+    }
+
+    .featured-post {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border: 1px solid var(--border-1);
+      background: var(--surface-1);
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+
+    .featured-post:hover { border-color: var(--purple); }
+
+    .featured-image {
+      aspect-ratio: 4/3;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .featured-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+      filter: grayscale(20%);
+    }
+
+    .featured-post:hover .featured-image img { transform: scale(1.04); }
+
+    .featured-tag {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      font-family: var(--mono);
+      font-size: 9px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      background: var(--purple);
+      color: white;
+      padding: 4px 10px;
+    }
+
+    .featured-content {
+      padding: 36px 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .post-meta {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--text-3);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      display: flex;
+      gap: 16px;
+    }
+
+    .featured-content h2 {
+      font-family: var(--mono);
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--text-1);
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+      margin-bottom: 14px;
+    }
+
+    .featured-content p {
+      color: var(--text-2);
+      font-size: 13px;
+      line-height: 1.7;
+      margin-bottom: 28px;
+      flex: 1;
+    }
+
+    .read-link {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--purple);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: gap 0.2s;
+    }
+
+    .read-link:hover { gap: 14px; }
+    .read-link::after { content: '→'; }
+
+    /* ── Post grid ── */
+    .posts-grid-wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 24px 80px;
+    }
+
+    .section-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--text-3);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-1);
+    }
+
+    .posts-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1px;
+      background: var(--border-1);
+      border: 1px solid var(--border-1);
+    }
+
+    .post-card {
+      background: var(--bg);
+      overflow: hidden;
+      transition: background 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .post-card:hover { background: var(--surface-1); }
+
+    .post-card-image {
+      aspect-ratio: 16/9;
+      overflow: hidden;
+    }
+
+    .post-card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+      filter: grayscale(15%);
+    }
+
+    .post-card:hover .post-card-image img { transform: scale(1.05); }
+
+    .post-card-body {
+      padding: 20px 20px 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .post-card-tag {
+      font-family: var(--mono);
+      font-size: 9px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--purple);
+      margin-bottom: 10px;
+    }
+
+    .post-card h3 {
+      font-family: var(--mono);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-1);
+      line-height: 1.4;
+      letter-spacing: -0.01em;
+      margin-bottom: 10px;
+    }
+
+    .post-card p {
+      font-size: 12px;
+      color: var(--text-2);
+      line-height: 1.65;
+      flex: 1;
+      margin-bottom: 16px;
+    }
+
+    .post-card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: auto;
+    }
+
+    .post-date {
+      font-family: var(--mono);
+      font-size: 9px;
+      color: var(--text-3);
+      letter-spacing: 0.06em;
+    }
+
+    .post-read-more {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--purple);
+      letter-spacing: 0.06em;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: gap 0.2s;
+    }
+
+    .post-read-more:hover { gap: 10px; }
+    .post-read-more::after { content: '→'; }
+
+    /* ── CTA band ── */
+    .cta-band {
+      border-top: 1px solid var(--border-1);
+      padding: 60px 24px;
+      text-align: center;
+      background: var(--surface-1);
+    }
+
+    .cta-band h2 {
+      font-family: var(--mono);
+      font-size: 22px;
+      font-weight: 500;
+      color: var(--text-1);
+      margin-bottom: 12px;
+      letter-spacing: -0.01em;
+    }
+
+    .cta-band p {
+      color: var(--text-2);
+      font-size: 14px;
+      margin-bottom: 28px;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: var(--purple);
+      color: white;
+      font-family: var(--mono);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 14px 28px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .cta-btn:hover { background: var(--purple-dim); }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border-1);
+      padding: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    footer .logo { font-family: var(--mono); font-size: 13px; color: var(--text-3); }
+    footer .logo span { color: var(--purple); }
+    footer nav { display: flex; gap: 20px; flex-wrap: wrap; }
+    footer nav a { font-family: var(--mono); font-size: 10px; color: var(--text-3); letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.2s; }
+    footer nav a:hover { color: var(--purple); }
+
+    /* ── Responsive ── */
+    @media (max-width: 680px) {
+      .featured-post { grid-template-columns: 1fr; }
+      .posts-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .blog-hero { padding: 48px 24px 40px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <a href="/" class="nav-logo">✦ <span>Tailora</span></a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/blog/" class="active">Blog</a>
+      <a href="/#features">Features</a>
+      <a href="/#wallet">Wallet</a>
+    </div>
+    <a href="/#download" class="nav-cta">Get the App</a>
+  </nav>
+
+  <!-- Hero -->
+  <header class="blog-hero">
+    <div class="blog-label">Tailora Journal</div>
+    <h1>Business tips for<br><em>African tailors</em><br>who mean business.</h1>
+    <p>Guides, strategies, and real advice to help you manage orders, grow your clientele, and build a tailoring business that runs itself.</p>
+  </header>
+
+  <!-- Filter tabs -->
+  <div class="filter-row" role="navigation" aria-label="Blog categories">
+    <button class="filter-tab active">All Posts</button>
+    <button class="filter-tab">Business</button>
+    <button class="filter-tab">Growth</button>
+    <button class="filter-tab">Measurements</button>
+    <button class="filter-tab">Technology</button>
+  </div>
+
+  <!-- Featured post -->
+  <section class="featured-wrap" aria-label="Featured article">
+    <a href="/blog/how-nigerian-tailors-stop-losing-money.html" class="featured-post">
+      <div class="featured-image">
+        <img
+          src="https://i.pinimg.com/1200x/99/d4/72/99d4725076bc6b8913c4e2ed81d598a9.jpg"
+          alt="Nigerian tailor working on garment orders at sewing machine"
+          loading="eager"
+        />
+        <span class="featured-tag">Featured</span>
+      </div>
+      <div class="featured-content">
+        <div>
+          <div class="post-meta">
+            <span>Business</span>
+            <span>May 2026</span>
+            <span>6 min read</span>
+          </div>
+          <h2>How Nigerian Tailors Can Stop Losing Money on Orders</h2>
+          <p>Most tailors lose 20–40% of their potential revenue every month — not to bad clients, but to bad systems. No record of deposits. Forgotten deadlines. Undercounting order items. Here's how to fix it for good.</p>
+        </div>
+        <span class="read-link">Read article</span>
+      </div>
+    </a>
+  </section>
+
+  <!-- Posts grid -->
+  <section class="posts-grid-wrap" aria-label="All blog articles">
+    <div class="section-label">All Articles — 5 posts</div>
+    <div class="posts-grid">
+
+      <a href="/blog/best-apps-for-tailors-africa-2026.html" class="post-card">
+        <div class="post-card-image">
+          <img
+            src="https://i.pinimg.com/1200x/3a/2b/4c/3a2b4c9e8f1d2a6b7c5e4f3a2b1c9d8e.jpg"
+            alt="Tailor using smartphone app to manage orders"
+            loading="lazy"
+            onerror="this.src='https://i.pinimg.com/1200x/8e/1f/4a/8e1f4a2b3c9d5e6f7a8b1c2d3e4f5a6b.jpg'"
+          />
+        </div>
+        <div class="post-card-body">
+          <div class="post-card-tag">Technology</div>
+          <h3>The Best Apps for Tailors in Africa in 2026</h3>
+          <p>A no-nonsense roundup of every app a working tailor in Africa should know about — from order management to invoicing to customer records. We tested them all.</p>
+          <div class="post-card-footer">
+            <span class="post-date">May 2026 · 8 min</span>
+            <span class="post-read-more">Read</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/perfect-body-measurements-tailor-guide.html" class="post-card">
+        <div class="post-card-image">
+          <img
+            src="https://i.pinimg.com/1200x/b2/3c/4d/b23c4d5e6f7a8b9c0d1e2f3a4b5c6d7e.jpg"
+            alt="Professional tailor taking body measurements with tape measure"
+            loading="lazy"
+            onerror="this.src='https://i.pinimg.com/1200x/c3/d4/e5/c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8.jpg'"
+          />
+        </div>
+        <div class="post-card-body">
+          <div class="post-card-tag">Measurements</div>
+          <h3>The Complete Guide to Taking Perfect Body Measurements</h3>
+          <p>Bad measurements cost you time, fabric, and clients. This guide covers every measurement a tailor needs — from chest to trouser break — and how to record them so they never get lost.</p>
+          <div class="post-card-footer">
+            <span class="post-date">April 2026 · 10 min</span>
+            <span class="post-read-more">Read</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/african-tailors-digital-business.html" class="post-card">
+        <div class="post-card-image">
+          <img
+            src="https://i.pinimg.com/1200x/d4/e5/f6/d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9.jpg"
+            alt="Modern African tailor studio with digital tools and technology"
+            loading="lazy"
+            onerror="this.src='https://i.pinimg.com/1200x/e5/f6/a7/e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0.jpg'"
+          />
+        </div>
+        <div class="post-card-body">
+          <div class="post-card-tag">Business</div>
+          <h3>From Notebook to Digital: How African Tailors Are Running Smarter Businesses</h3>
+          <p>The shift from paper to digital is happening across Africa's fashion industry. Here's what it looks like, why it matters, and what tailors who've made the switch say about the difference.</p>
+          <div class="post-card-footer">
+            <span class="post-date">April 2026 · 7 min</span>
+            <span class="post-read-more">Read</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/grow-tailoring-business-whatsapp-instagram.html" class="post-card">
+        <div class="post-card-image">
+          <img
+            src="https://i.pinimg.com/1200x/f6/a7/b8/f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1.jpg"
+            alt="Fashion designer showcasing work on social media"
+            loading="lazy"
+            onerror="this.src='https://i.pinimg.com/1200x/a7/b8/c9/a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2.jpg'"
+          />
+        </div>
+        <div class="post-card-body">
+          <div class="post-card-tag">Growth</div>
+          <h3>How to Grow Your Tailoring Business on WhatsApp and Instagram in 2026</h3>
+          <p>WhatsApp and Instagram are where your next 50 clients already are. This is the exact strategy African tailors are using to fill their order books using nothing but a smartphone.</p>
+          <div class="post-card-footer">
+            <span class="post-date">March 2026 · 9 min</span>
+            <span class="post-read-more">Read</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <h2>Ready to run your tailoring business like a pro?</h2>
+    <p>Join thousands of tailors across Africa who manage orders, clients, and payments with Tailora.</p>
+    <a href="/#download" class="cta-btn">Download Tailora — It's Free</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="logo">✦ <span>Tailora</span></div>
+    <nav aria-label="Footer navigation">
+      <a href="/">Home</a>
+      <a href="/blog/">Blog</a>
+      <a href="/privacy-policy.html">Privacy</a>
+      <a href="/terms-of-use.html">Terms</a>
+    </nav>
+  </footer>
+
+</body>
+</html>
