@@ -54,15 +54,12 @@ nav {
   align-items: center;
   gap: 8px;
 }
-<<<<<<< HEAD
-=======
 .nav-logo img {
   width: 22px;
   height: 22px;
   object-fit: contain;
   display: block;
 }
->>>>>>> 9d4cdd0 (update with the blog)
 .nav-logo span { color: var(--purple); }
 
 .nav-links {
@@ -95,8 +92,6 @@ nav {
 }
 .nav-cta:hover { background: var(--purple-dim); }
 
-<<<<<<< HEAD
-=======
 /* Blog index */
 .blog-shell {
   max-width: 1120px;
@@ -242,7 +237,6 @@ nav {
   text-transform: uppercase;
 }
 
->>>>>>> 9d4cdd0 (update with the blog)
 /* ── Article layout ── */
 article {
   max-width: 720px;
@@ -314,8 +308,6 @@ article h1 {
   display: block;
   filter: grayscale(10%);
 }
-<<<<<<< HEAD
-=======
 .hero-image-wrap video {
   width: 100%;
   max-height: 520px;
@@ -323,7 +315,6 @@ article h1 {
   display: block;
   background: var(--surface-1);
 }
->>>>>>> 9d4cdd0 (update with the blog)
 
 /* ── Body ── */
 .article-body {
@@ -437,8 +428,6 @@ article h1 {
   gap: 24px;
   flex-wrap: wrap;
 }
-<<<<<<< HEAD
-=======
 .article-cta-media {
   width: 100%;
   border: 1px solid var(--border-1);
@@ -451,7 +440,6 @@ article h1 {
   object-fit: cover;
   display: block;
 }
->>>>>>> 9d4cdd0 (update with the blog)
 .article-cta h3 {
   font-family: var(--mono);
   font-size: 16px;
@@ -545,12 +533,8 @@ footer {
   flex-wrap: wrap;
   gap: 12px;
 }
-<<<<<<< HEAD
-footer .logo { font-family: var(--mono); font-size: 13px; color: var(--text-3); }
-=======
 footer .logo { font-family: var(--mono); font-size: 13px; color: var(--text-3); display: flex; align-items: center; gap: 8px; }
 footer .logo img { width: 20px; height: 20px; object-fit: contain; display: block; }
->>>>>>> 9d4cdd0 (update with the blog)
 footer .logo span { color: var(--purple); }
 footer nav { display: flex; gap: 20px; flex-wrap: wrap; }
 footer nav a { font-family: var(--mono); font-size: 10px; color: var(--text-3); letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.2s; }
@@ -559,8 +543,6 @@ footer nav a:hover { color: var(--purple); }
 /* ── Responsive ── */
 @media (max-width: 680px) {
   .nav-links { display: none; }
-<<<<<<< HEAD
-=======
   .blog-shell { padding: 48px 18px 64px; }
   .blog-grid { grid-template-columns: 1fr; }
   .blog-card.featured { grid-column: auto; display: flex; flex-direction: column; padding: 24px; }
@@ -582,7 +564,6 @@ footer nav a:hover { color: var(--purple); }
   }
   .blog-card.featured .blog-card-top { margin-top: 0; }
   .blog-card.featured .blog-read { margin-bottom: 0; }
->>>>>>> 9d4cdd0 (update with the blog)
   .related-grid { grid-template-columns: 1fr; }
   .article-cta { flex-direction: column; }
   article h1 { font-size: 26px; }
