@@ -1,0 +1,32 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="grain" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.78" numOctaves="4" seed="8"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.18"/>
+      </feComponentTransfer>
+    </filter>
+    <radialGradient id="light" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(430 610) rotate(-74) scale(560 930)">
+      <stop stop-color="#334154"/>
+      <stop offset="0.42" stop-color="#111827"/>
+      <stop offset="1" stop-color="#03050A"/>
+    </radialGradient>
+    <linearGradient id="shade" x1="1200" y1="0" x2="430" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#03050A"/>
+      <stop offset="0.55" stop-color="#080B12" stop-opacity="0.76"/>
+      <stop offset="1" stop-color="#1D2736" stop-opacity="0.38"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#060911"/>
+  <rect width="1200" height="630" fill="url(#light)"/>
+  <rect width="1200" height="630" fill="url(#shade)"/>
+  <rect width="1200" height="630" filter="url(#grain)" opacity="0.8"/>
+  <path d="M46 49H151V130H126V88.7C123.1 102 116.7 113.9 102.4 123.6C89.6 132.3 70.8 130.7 46.1 128.6V92.1C58 93.9 76.3 94.2 86.4 85.1C93.2 78.9 96.1 72.1 96.2 65.8H46V49Z" fill="white"/>
+  <text x="965" y="104" fill="white" font-family="'DM Mono', 'Courier New', monospace" font-size="42" font-weight="700" letter-spacing="-3">Tailora</text>
+  <text x="46" y="309" fill="white" font-family="'DM Mono', 'Courier New', monospace" font-size="64" font-weight="400" letter-spacing="7">Your Tailoring</text>
+  <text x="46" y="396" fill="white" font-family="'DM Mono', 'Courier New', monospace" font-size="64" font-weight="400" letter-spacing="7">Business,Finally</text>
+  <text x="46" y="485" fill="#D946EF" font-family="'DM Mono', 'Courier New', monospace" font-size="64" font-weight="500" letter-spacing="1">Organised.</text>
+  <text x="46" y="545" fill="#AAB0BC" font-family="Arial, sans-serif" font-size="27" font-weight="500" letter-spacing="0.5">Replace the notebooks, WhatsApp threads, and mental maths with one</text>
+  <text x="46" y="584" fill="#AAB0BC" font-family="Arial, sans-serif" font-size="27" font-weight="500" letter-spacing="0.5">professional app built exactly for how African tailors work.</text>
+</svg>
