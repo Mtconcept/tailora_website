@@ -465,6 +465,27 @@ article h1 {
 }
 .cta-btn:hover { background: var(--purple-dim); }
 
+/* ── Store badges ── */
+.store-badges {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+.store-badge-link {
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.2s, opacity 0.2s;
+  opacity: 0.92;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.store-badge-link:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+
 /* ── Related posts ── */
 .related-posts {
   border-top: 1px solid var(--border-1);
