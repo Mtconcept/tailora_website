@@ -3577,34 +3577,85 @@
             })();
         </script>
         <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "SoftwareApplication",
-                "name": "Tailora",
-                "operatingSystem": "Android, iOS",
-                "applicationCategory": "BusinessApplication",
-                "offers": {
-                    "@type": "Offer",
-                    "price": "0",
-                    "priceCurrency": "NGN"
-                },
-                "description": "Free business management app for African tailors and fashion designers. Manage orders, customers, measurements, and payments.",
-                "url": "https://usetailora.com",
-                "publisher": {
-                    "@type": "Organization",
-                    "name": "Tailora",
-                    "url": "https://usetailora.com",
-                    "logo": "https://usetailora.com/favicon.svg",
-                    "contactPoint": {
-                        "@type": "ContactPoint",
-                        "email": "support@usetailora.com",
-                        "contactType": "customer support"
-                    }
-                },
-                "areaServed": ["NG", "GH", "KE", "ZA", "SN"],
-                "inLanguage": "en"
-            }
-        </script>
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://usetailora.com/#organization",
+      "name": "Tailora",
+      "url": "https://usetailora.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://usetailora.com/favicon.svg"
+      },
+      "description": "Tailora is a free business management app for African tailors and fashion designers, helping them manage orders, customers, measurements, and payments.",
+      "sameAs": [
+        "https://www.instagram.com/tailora.ng/",
+        "https://www.tiktok.com/@usetailora"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "support@usetailora.com",
+        "contactType": "customer support"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://usetailora.com/#software",
+      "name": "Tailora",
+      "url": "https://usetailora.com/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": [
+        "Android",
+        "iOS"
+      ],
+      "description": "Free business management app for African tailors and fashion designers. Manage orders, customers, measurements, and payments from your phone.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "NGN"
+      },
+      "publisher": {
+        "@id": "https://usetailora.com/#organization"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Nigeria"
+        },
+        {
+          "@type": "Country",
+          "name": "Ghana"
+        },
+        {
+          "@type": "Country",
+          "name": "Kenya"
+        },
+        {
+          "@type": "Country",
+          "name": "South Africa"
+        },
+        {
+          "@type": "Country",
+          "name": "Senegal"
+        }
+      ],
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://usetailora.com/#website",
+      "url": "https://usetailora.com/",
+      "name": "Tailora",
+      "publisher": {
+        "@id": "https://usetailora.com/#organization"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
         <script
             id="ACXConnectScript"
             type="text/javascript"
