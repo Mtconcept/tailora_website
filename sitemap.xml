@@ -3,64 +3,50 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://usetailora.com/</loc>
+    <loc>https://www.usetailora.com/</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://usetailora.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.usetailora.com/" />
   </url>
 
   <url>
-    <loc>https://usetailora.com/privacy-policy.html</loc>
-    <lastmod>2026-03-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-  </url>
-
-  <url>
-    <loc>https://usetailora.com/terms-of-use.html</loc>
-    <lastmod>2026-03-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-  </url>
-
-  <url>
-    <loc>https://usetailora.com/blog/</loc>
+    <loc>https://www.usetailora.com/blog/</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://usetailora.com/blog/how-nigerian-tailors-stop-losing-money.html</loc>
+    <loc>https://www.usetailora.com/blog/how-nigerian-tailors-stop-losing-money.html</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://usetailora.com/blog/best-apps-for-tailors-africa-2026.html</loc>
+    <loc>https://www.usetailora.com/blog/best-apps-for-tailors-africa-2026.html</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://usetailora.com/blog/perfect-body-measurements-tailor-guide.html</loc>
+    <loc>https://www.usetailora.com/blog/perfect-body-measurements-tailor-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://usetailora.com/blog/grow-tailoring-business-whatsapp-instagram.html</loc>
+    <loc>https://www.usetailora.com/blog/grow-tailoring-business-whatsapp-instagram.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://usetailora.com/blog/african-tailors-digital-business.html</loc>
+    <loc>https://www.usetailora.com/blog/african-tailors-digital-business.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

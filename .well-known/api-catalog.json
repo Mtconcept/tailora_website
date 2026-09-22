@@ -22,7 +22,7 @@
       ],
       "https://www.iana.org/assignments/link-relations/describedby": [
         {
-          "href": "https://usetailora.com/.well-known/api-catalog",
+          "href": "https://www.usetailora.com/.well-known/api-catalog",
           "type": "application/linkset+json"
         }
       ]
@@ -34,11 +34,11 @@
     "version": "1.0",
     "contact": {
       "email": "support@usetailora.com",
-      "url": "https://usetailora.com"
+      "url": "https://www.usetailora.com"
     },
     "license": {
       "name": "Proprietary — All rights reserved",
-      "url": "https://usetailora.com/terms-of-use.html"
+      "url": "https://www.usetailora.com/terms-of-use.html"
     },
     "authentication": {
       "type": "bearer",

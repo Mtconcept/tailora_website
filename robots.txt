@@ -1,34 +1,18 @@
 
 
-Sitemap: https://usetailora.com/sitemap.xml
+Sitemap: https://www.usetailora.com/sitemap.xml
 
 
 # robots.txt — usetailora.com
 # Last updated: April 2026
 # Tailora · The business OS for African tailors
 
-# ── Standard web crawlers ─────────────────────────────────────────────────────
+# ── Public site ───────────────────────────────────────────────────────────────
 
 User-agent: *
 Allow: /
-Allow: /index.html
-Allow: /privacy-policy.html
-Allow: /terms-of-use.html
 Disallow: /admin/
 Disallow: /.well-known/openid-configuration
-Crawl-delay: 10
-
-# ── Search engines ────────────────────────────────────────────────────────────
-
-User-agent: Googlebot
-Allow: /
-Disallow: /admin/
-Crawl-delay: 5
-
-User-agent: Bingbot
-Allow: /
-Disallow: /admin/
-Crawl-delay: 5
 
 # ── AI Training crawlers ──────────────────────────────────────────────────────
 # We do not permit use of our content for AI model training.
@@ -102,7 +86,7 @@ Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 # ── Sitemaps ──────────────────────────────────────────────────────────────────
 
-Sitemap: https://usetailora.com/sitemap.xml
+Sitemap: https://www.usetailora.com/sitemap.xml
 
 # ── API (api.usetailora.com) ──────────────────────────────────────────────────
 # The Tailora REST API is documented at:
